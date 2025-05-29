@@ -1,0 +1,178 @@
+Q.NO.1
+DECLARE FUNCTION AREA (L,B)
+DECLARE SUB VOL(L,B,H)
+Cls
+Input "ENTER LENGTH, BREADTH, AND HEIGHT"; L, B, H
+X = AREA(L, B)
+Print "AREA IS: "; X
+Call VOL(L, B, H)
+End
+
+Function AREA (L, B)
+    A = L * B
+    AREA = A
+End Function
+
+Sub VOL (L, B, H)
+    V = L * B * H
+    Print "VOLUME IS: "; V
+End Sub
+
+Q.NO.2
+
+DECLARE FUNCTION AREA (L,B,H)
+DECLARE SUB VOL(L,B,H)
+Cls
+Input "ENTER LENGTH, BREADTH, AND HEIGHT"; L, B, H
+X = AREA(L, B, H)
+Print "AREA IS: "; X
+Call VOL(L, B, H)
+End
+
+Function AREA (L, B, H)
+    A = 2 * H * (L + B)
+    AREA = A
+End Function
+
+Sub VOL (L, B, H)
+    V = L * B * H
+    Print "VOLUME IS: "; V
+End Sub
+
+Q.NO.3
+
+DECLARE FUNCTION AREA (L,B)
+DECLARE SUB PER(L,B)
+Cls
+Input "ENTER LENGTH, BREADTH"; L, B
+X = AREA(L, B)
+Print "AREA IS: "; X
+Call PER(L, B)
+End
+
+Function AREA (L, B)
+    A = L * B
+    AREA = A
+End Function
+
+Sub PER (L, B)
+    P = 2 * (L + B)
+    Print "PERIMETER IS: "; P
+End Sub
+
+Q.NO.4
+
+DECLARE FUNCTION VOL(L,B,H)
+DECLARE SUB TSA(L,B,H)
+Cls
+Input "ENTER LENGTH, BREADTH, AND HEIGHT"; L, B, H
+X = VOL(L, B, H)
+Print "VOLUME IS: "; X
+Call TSA(L, B, H)
+End
+
+Function VOL (L, B, H)
+    V = L * B * H
+    VOL = V
+End Function
+
+Sub TSA (L, B, H)
+    A = 2 * (L * B + B * H + H * L)
+    Print "AREA IS: "; A
+End Sub
+
+
+Q.NO.5
+
+DECLARE FUNCTION AREA(R)
+DECLARE SUB CIR(R)
+Cls
+Input "ENTER RADIUS: "; R
+X = AREA(R)
+Print "AREA IS: "; X
+Call CIR(R)
+End
+
+Function AREA (R)
+    A = 3.14 * R ^ 2
+    AREA = A
+End Function
+
+Sub CIR (R)
+    C = 2 * 3.14 * R
+    Print "CIRCUMFERENCE IS: "; C
+End Sub
+
+Q.NO.6
+DECLARE SMALL (A, B, C)
+DECLARE SUB LARGE(A,B,C)
+Cls
+Input "PLEASE ENTER THREE NUMBERS: "; A, B, C
+X = SMALL(A, B, C)
+Print "SMALL IS: "; X
+Call LARGE(A, B, C)
+End
+
+Function SMALL (A, B, C)
+    If A < B And A < C Then
+        SMALL = A
+    ElseIf B < A And B < C Then
+        SMALL = B
+    Else
+        SMALL = C
+    End If
+End Function
+
+Sub LARGE (A, B, C)
+    If A > B And A > C Then
+        Print "LARGETS IS: "; A
+    ElseIf B > A And B > C Then
+        Print "LARGEST IS : "; B
+    Else
+        Print "LARGEST IS: "; C
+    End If
+End Sub
+
+Q.NO.7
+
+DECLARE FUNCTION VOL (R,H)
+DECLARE SUB CSA(R,H)
+Cls
+Input "ENTER RADIUS AND HEIGHT OF A CYLINDER: "; R, H
+X = VOL(R, H)
+Print "VOLUME IS: "; X
+Call CSA(R, H)
+End
+
+Function VOL (R, H)
+    V = 3.14 * R ^ 2 * H
+    VOL = V
+End Function
+
+Sub CSA (R, H)
+    C = 2 * 3.14 * R * H
+    Print "CSA IS: "; C
+End Sub
+
+
+Q.NO.8
+
+DECLARE FUNCTION AREA(L,B)
+DECLARE SUB VOL(R,H)
+Cls
+Input "ENTER LENGTH AND BREADTH: "; L, B
+Input "RADIUS AND HEIGHT: "; R, H
+X = AREA(L, B)
+Print "AREA IS :"; X
+Call VOL(R, H)
+End
+
+Function AREA (L, B)
+    A = L * B
+    AREA = A
+End Function
+
+Sub VOL (R, H)
+    V = 3.14 * R ^ 2 * H
+    Print "VOLUME IS: "; V
+End Sub

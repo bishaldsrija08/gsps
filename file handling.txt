@@ -1,0 +1,134 @@
+Open "library.txt" For Output As #1
+Cls
+Input "Enter name, address, class and roll: "; n$, a$, c, r
+Write #1, n$, a$, c, r
+Close #1
+End
+
+Open "library.txt" For Output As #1
+Cls
+Input "How many records you want to store? "; n
+For i = 1 To n
+    Input "Enter name, address, class and roll: "; n$, a$, c, r
+    Write #1, n$, a$, c, r
+Next i
+Close #1
+End
+
+
+Open "library.txt" For Output As #1
+Cls
+Do
+    Input "Enter name, address, class and roll: "; n$, a$, c, r
+    Write #1, n$, a$, c, r
+    Input "Do you want to continue? if yes press (Y)"; a$
+Loop While a$ = "y"
+Close #1
+End
+
+Open "Employee.txt" For Output As #1
+Cls
+Input "Enter name, age, gender and salary: "; n$, a, g$, s
+Write #1, n$, a, g$, s
+Close #1
+end
+
+
+Open "sales.txt" For Output As #1
+Cls
+For i = 1 To 10
+    Input "Enter item name, rate, and quantity: "; i$, r, q
+    Write #1, i$, r, q
+Next i
+Close #1
+End
+
+Open "RESULT.txt" For Output As #1
+Cls
+Do
+    Input "Enter students' name, class, and marks secured in three subjects: "; n$, c, s, n, e
+    t = s + n + e
+    Write #1, n$, c, s, n, e, t
+    Input "Do you want to continue? if yes press (y): "; y$
+Loop While y$ = "y"
+Close #1
+End
+
+Open "Patient.txt" For Input As #1
+Cls
+While Not EOF(1)
+    Input #1, p$, d$, a, b
+    If p$ = "RAM" Then
+        Print p$, d$, a, b
+    End If
+Wend
+Close #1
+End
+
+
+Open "Patient.txt" For Input As #1
+Cls
+While Not EOF(1)
+    Input #1, p$, d$, a, b
+    f$ = Left$(p$, 1)
+    If f$ = "K" Then
+        Print p$, d$, a, b
+    End If
+Wend
+Close #1
+End
+
+
+Open "SALARY.txt" For Input As #1
+Cls
+While Not EOF(1)
+    Input #1, n$, a$, r, s
+    Print n$, a$, r, s
+Wend
+Close #1
+End
+
+
+Open "sales.txt" For Input As #1
+Cls
+For i = 1 To 10
+    Input #1, n$, r, q
+    Print n$, r, q
+Next i
+Close #1
+End
+
+
+Open "pass.txt" For Input As #1
+Cls
+While Not EOF(1)
+    Input #1, n$, e, m, c
+    n = n + 1
+    f$ = Left$(n$, 1)
+    If f$ = "a" Then
+        Print n$, e, m, c
+    End If
+Wend
+Print "Total no of data is: "; n
+Close #1
+End
+
+
+Open "class.txt" For Input As #1
+Cls
+For i = 1 To 10
+    Input #1, n$, r, c
+    Print n$, r, c
+Next i
+Close #1
+    end
+
+Open "EMP.txt" For Input As #1
+Cls
+While Not EOF(1)
+    Input #1, n$, p$, s
+    t = 15 / 100 * s
+    Print n$, p$, s, t
+Wend
+Close #1
+End

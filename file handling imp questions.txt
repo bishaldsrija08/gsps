@@ -1,0 +1,29 @@
+File Handling in QBASIC
+
+1. Create a sequential data file name "library.txt" and store name, address, class and roll_no of a student.
+
+2. Create a sequential data file name" Library.txt" and store name, address, class and roll_no of a few students.
+
+3. Create a sequential datafile name "library.txt" and store name, address, class and roll_no until user press Y.
+
+4. A sequential data file "Patient.txt" contains name of patient, disease, age and bedno. WAP to display only records of RAM.
+
+5. A sequential data file "Patient.txt" contains name of patient, disease, age and bed no. WAP to display only records whose name starts with "K"
+
+6. A sequential data file "student.txt" contains few records under the fields Name, English, Nepali & Computer. Write a program to add few more records in the same sequential data file.
+
+7. Write a program to create a sequential data file "Employee.txt" to store employees' Name, Age, Gender and Salary.
+
+8. Read information as name, address, roll and salary from "SALARY.txt" file and display them.
+
+9. A sequential data file "sales.txt" has several records with fields item's name, rate and quantity. Write a program that reads its first 10 records and displays them.
+
+10. A sequential data file "pass.txt" has several records having fields student's name and marks in English, Math and Computer. Write a program that reads all the records and displays only those records whose name starts with 'A' and also counts the total number of records stored in the file.
+
+11. Write a program that asks item's name, rate and quantity and stores into "sales. txt". The user can supply 10 records in each execution of the program.
+
+12. A sequential data file "class.txt" has several records with fields students' name, roll and class. Write a program that reads all the records and displays only those records whose roll number is less than 10.
+
+13. A sequential data file "EMP.txt" contains name, post and salary fields of information about employees. Write a program to display all the information of employee along with tax amount also (tax is 15% of salary)
+
+14. Write a program to ask students' name, class, and marks secured in three subjects. Store the data in a sequential data file "RESULT. DAT" along with the total marks. Make a provision to ask the user to enter another record.
